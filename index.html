@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3-Of7DaysOfCode</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <section class="contenedor">
+
+        <h1 class="titulo">Day3 OfDaysOfCode</h1> 
+
+        <div class="contenido-select" style="display: block;">
+            <label for="preguntas"><strong>¿Eres un desarrollador?</strong><br></label>
+            <select id="preguntas" name="preguntas">
+                <option value="Front-End">Front-End</option>
+                <option value="Back-End">Back-End</option>
+            </select>
+            <button type="submit" onclick="botonEnviar(event)" class="botonEnviar">Enviar</button>
+        </div>
+
+        <div class="frontend-content" id="frontend-content" style="display: none;">
+            <label for="frontend"><strong>Lenguaje de programacón</strong><br></label>
+            <select id="frontend" name="frontend">
+                <option value="REACT">REACT</option>
+                <option value="VUE">VUE</option>
+            </select>
+            <button type="submit" onclick="botonEnviar2(event)" class="botonEnviar">Enviar</button>
+        </div>
+
+        <div class="backend-content" style="display: none;">
+            <label for="backend"><strong>Lenguaje de programación</strong><br></label>
+            <select id="backend" name="backend">
+                <option value="C#">C#</option>
+                <option value="JAVA">JAVA</option>
+            </select>
+            <button type="submit" onclick="botonEnviar3(event)" class="botonEnviar">Enviar</button>
+        </div>
+        
+        <div class="fullstackContent" style="display: none;">
+            <label for="fullstack"><strong>¿Que quieres hacer?</strong><br></label>
+            <select id="fullstack" name="fullstack">
+                <option value="Seguir especializándose en el área elegida">Seguir especializándose en el área elegida</option>
+                <option value="Desarrollarse para convertirse en Fullstack">Desarrollarse para convertirse en Fullstack</option>
+            </select>
+            <button type="submit" onclick="botonEnviar4(event)" class="botonEnviar">Enviar</button>
+        </div>
+            
+        <div class="prenguntafinal" style="display: none;">
+             <label for="preguntaFinal1" id="labelfinal">¿Hay alguna otra tecnología que te gustaría aprender?<br></label>
+            <input type="text" name="preguntaFinal" id="preguntaFinal" class="preguntaFinal" >
+            <button type="submit" onclick="botonEnviar5(event)" class="botonEnviar">Enviar</button>
+            <div id="error"></div> 
+        </div>
+        <div class="content-resultado">
+            <div id="resultado" style="display: none;"></div><br>
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
