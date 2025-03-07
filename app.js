@@ -79,12 +79,3 @@ function actualizarResultado(mensaje) {
             document.getElementById('resultado').style.display= 'block';
         }
     }
-
-
-
-
-    /**function  () {
-            const resultado = document.getElementById("resultado");
-            resultado.innerHTML = `${funcion1()} ${funcion2()} ${funcion3()} ${funcion4()} ${funcion5()}`;
-        }
-     */
