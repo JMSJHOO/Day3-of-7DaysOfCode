@@ -44,7 +44,7 @@ select,option, input{
 .botonEnviar{
     background-color: var(--color-cielo);
     height: 30px;
-    width: 70px;
+    width: 90px;
     font-size: 20px;
     cursor: pointer;
     text-align: center;
